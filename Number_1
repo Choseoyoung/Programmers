@@ -1,0 +1,16 @@
+def solution(s):    
+    open_count = 0
+    close_count = 0
+
+    for i in s:
+        if i == '(':
+            open_count += 1
+        elif i == ')':
+            close_count +=1
+
+        if close_count > open_count:
+            return False
+
+    if open_count != close_count:
+        return False
+    return True
