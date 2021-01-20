@@ -1,0 +1,28 @@
+def fibo(n):
+    if n==1:
+        return 1
+    elif n==2:
+        return 1
+    else:
+        return fibo(n-2)+fibo(n-1)
+
+
+##################################
+llist=[0]*100
+
+def fibo2(n):
+    if n==1:
+        return 1
+    elif n==2:
+        return 1
+    elif llist[n]!=0:
+        return llist[n]
+    else:
+        llist[n]=fibo2(n-1)+fibo2(n-2)
+        return llist[n]
+##################################
+def fibo3(n):
+    a,b=0,1
+    for i in range(n-1):
+        a,b=b,a+b
+    return b
