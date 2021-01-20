@@ -1,0 +1,3 @@
+def solution(s):
+    llist=[int(i) for i in s.split(' ')]
+    return str(min(llist))+' '+str(max(llist))
