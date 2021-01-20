@@ -13,4 +13,5 @@ def solution(s):
 
     if open_count != close_count:
         return False
+        
     return True
