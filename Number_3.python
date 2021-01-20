@@ -1,0 +1,8 @@
+def solution(land):
+    for i in range(1,len(land)):
+        for j in range(4):
+            llist=land[i-1].copy()
+            llist.pop(j)
+            land[i][j]+=max(llist)
+   
+    return max(land[-1])
