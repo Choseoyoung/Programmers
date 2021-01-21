@@ -59,3 +59,5 @@ def solution(arr):
     answer.append(cnt_0)
     answer.append(cnt_1)
     return answer
+
+solution([1,2,3,4])
